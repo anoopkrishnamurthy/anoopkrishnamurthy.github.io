@@ -10,55 +10,78 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #282c36;
+            color: #ffffff;
         }
 
         header {
-            background-color: #333;
-            color: #fff;
-            padding-top: 30px;
+            background-color: #1e2228;
+            color: #ffffff;
+            padding-top: 50px;
             text-align: center;
         }
 
         nav {
-            background-color: #444;
+            background-color: #1e2228;
             padding: 10px 0;
             text-align: center;
         }
 
         nav a {
-            color: #fff;
+            color: #ffffff;
             text-decoration: none;
             margin: 0 15px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff6f61;
         }
 
         .container {
-            padding: 20px;
+            padding: 40px;
+            text-align: center;
         }
 
         .content {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #373f49;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .content h2 {
+            color: #ff6f61;
         }
 
         footer {
-            background-color: #333;
-            color: #fff;
+            background-color: #1e2228;
+            color: #ffffff;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
+            position: relative;
             bottom: 0;
             width: 100%;
+        }
+
+        .social-icons a {
+            color: #ff6f61;
+            margin: 0 15px;
+            font-size: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Anoop Krishnamurthy</h1>
-        <p>Senior Technical Program Manager</p>
+        <h1>Your Name</h1>
+        <p>Web Developer &amp; Designer</p>
     </header>
 
     <nav>
@@ -70,12 +93,13 @@
     <div class="container">
         <div id="about" class="content">
             <h2>About Me</h2>
-            <p>Write a brief introduction about yourself here.</p>
+            <p>Welcome to my personal website! I'm passionate about creating beautiful and functional web experiences.</p>
         </div>
 
         <div id="portfolio" class="content">
             <h2>Portfolio</h2>
-            <p>Showcase your projects, skills, or achievements here.</p>
+            <p>Check out some of my latest projects below:</p>
+            <!-- Add your portfolio items here -->
         </div>
 
         <div id="contact" class="content">
@@ -84,12 +108,21 @@
                 Phone: (123) 456-7890<br>
                 LinkedIn: <a href="https://www.linkedin.com/in/yourname">linkedin.com/in/yourname</a>
             </p>
+            <div class="social-icons">
+                <a href="#your-social-profile-link"><i class="fab fa-twitter"></i></a>
+                <a href="#your-social-profile-link"><i class="fab fa-facebook"></i></a>
+                <a href="#your-social-profile-link"><i class="fab fa-instagram"></i></a>
+                <a href="#your-social-profile-link"><i class="fab fa-linkedin"></i></a>
+            </div>
         </div>
     </div>
 
     <footer>
         <p>&copy; 2023 Your Name. All rights reserved.</p>
     </footer>
+
+    <!-- Add Font Awesome for social icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
